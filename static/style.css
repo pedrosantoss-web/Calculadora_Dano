@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html{
+    background: url('https://i.pinimg.com/originals/e3/15/2c/e3152c556938ba420065dc436b6f9370.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+html::after{
+    content: '';
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+}
+
+ section{
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+} 
+
+h1{
+    margin-top: 25px;
+}
+.inimigos,
+.armas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+img{
+    border-radius: 10px 10px 0 0;
+}
+
+.inimigo,
+.arma{
+    margin: 0 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.inimigo:hover,
+.arma:hover{
+    transform: scale(1.05);
+}
+
+.inimigo-selecionado,
+.arma-selecionada{
+    border: .5px solid rgb(12, 82, 12);
+    border-bottom: 10px solid rgb(12, 82, 12);
+    transform: transition .5s;
+}
+
+.botao{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#botao{
+    padding: 15px 80px ;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms;
+    border: none;
+    background-color: rgb(13, 243, 105);
+    box-shadow: 3px 3px 5px rgba(52, 85, 67, 0.137);
+    color: white;
+    font-size: 20px;
+}
+
+#botao:hover{
+    transform: scale(1.05);
+}
+
+#dano {
+    font-size: medium;
+    font-weight: bold ;
+    color: rgb(170, 153, 153);
+}
