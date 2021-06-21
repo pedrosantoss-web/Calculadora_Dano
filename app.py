@@ -16,7 +16,7 @@ def homer():
             "foto": "https://pm1.narvii.com/6284/90c5f1d94fef70be09643026c7ec1d7a244fd609_hq.jpg"
         },
         {
-            "nome": "Globin",
+            "nome": "Goblin",
             "vida": 45,
             "foto": "https://pm1.narvii.com/6547/497b3625f161b4847a9eb557813023526a339886_hq.jpg"
         }
